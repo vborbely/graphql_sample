@@ -1,0 +1,9 @@
+query AllProducts($first: Int!)
+{
+    products (first: $first) {
+        totalCount,
+        edges {
+            node {id, name, rating, descriptionJson}
+        }
+    }
+}
